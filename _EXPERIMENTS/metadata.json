@@ -1,0 +1,1262 @@
+[
+    {
+        "uuid": "126fd043-9cc1-4d30-8abf-0f07a7b0bc6e",
+        "filename": "2.img.nrrd",
+        "patient_id": "2",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/2.img.nrrd",
+        "number_of_slices": 242,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "466cebe5-1623-40a8-a850-09155e7341a9",
+        "filename": "2.b.seg.nrrd",
+        "patient_id": "2",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/2.b.seg.nrrd",
+        "number_of_slices": 242,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "1ec0b50f-83a5-40fe-b9e9-e861360ef51b",
+        "filename": "5.img.nrrd",
+        "patient_id": "5",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/5.img.nrrd",
+        "number_of_slices": 201,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "78658a54-7c12-460b-b542-f8089f08c93e",
+        "filename": "5.b.seg.nrrd",
+        "patient_id": "5",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/5.b.seg.nrrd",
+        "number_of_slices": 201,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "a2724364-f908-4f93-ac17-58a14b28a594",
+        "filename": "6.b.seg.nrrd",
+        "patient_id": "6",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/6.b.seg.nrrd",
+        "number_of_slices": 279,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "fbb2a96b-01d6-4a58-81de-78bd01ca4d60",
+        "filename": "6.img.nrrd",
+        "patient_id": "6",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/6.img.nrrd",
+        "number_of_slices": 279,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "92c5f844-84de-41e3-83c4-f9a0ec41e5ec",
+        "filename": "7.img.nrrd",
+        "patient_id": "7",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/7.img.nrrd",
+        "number_of_slices": 210,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "82afa616-445b-4a5d-ada3-6e806faa9f07",
+        "filename": "7.b.seg.nrrd",
+        "patient_id": "7",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/7.b.seg.nrrd",
+        "number_of_slices": 210,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d09adeb9-0a33-416e-abdc-0656aeeaefee",
+        "filename": "9.img.nrrd",
+        "patient_id": "9",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/9.img.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "c0596ffc-ea28-4091-94fc-e45d3c5235a4",
+        "filename": "9.b.seg.nrrd",
+        "patient_id": "9",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/9.b.seg.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "b3384405-aa32-4710-82ee-8df6d87781b5",
+        "filename": "10.b.seg.nrrd",
+        "patient_id": "10",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/10.b.seg.nrrd",
+        "number_of_slices": 234,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "7758a93d-19c1-4bc3-9f0d-7a67a8b85a5a",
+        "filename": "10.img.nrrd",
+        "patient_id": "10",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/10.img.nrrd",
+        "number_of_slices": 234,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "23cb3c91-76fb-41b6-8f8e-7057f45116c6",
+        "filename": "11.b.img.nrrd",
+        "patient_id": "11",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/11.b.img.nrrd",
+        "number_of_slices": 256,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d9b27c7f-7be4-4296-b70e-35b50999053f",
+        "filename": "11.b.seg.nrrd",
+        "patient_id": "11",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/11.b.seg.nrrd",
+        "number_of_slices": 256,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "2e53d41e-eb39-4513-89e2-e741be7d22f0",
+        "filename": "12.img.nrrd",
+        "patient_id": "12",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/12.img.nrrd",
+        "number_of_slices": 222,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "5926f7aa-741a-4818-84d5-46812352eb2e",
+        "filename": "12.b.seg.nrrd",
+        "patient_id": "12",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/12.b.seg.nrrd",
+        "number_of_slices": 222,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "7339f7f5-c336-4e57-8d72-808d30888a1d",
+        "filename": "13.img.nrrd",
+        "patient_id": "13",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/13.img.nrrd",
+        "number_of_slices": 250,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "2adbd35b-2647-45b3-915b-20c44624888c",
+        "filename": "13.b.seg.nrrd",
+        "patient_id": "13",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/13.b.seg.nrrd",
+        "number_of_slices": 250,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "26019d57-306c-41a1-bb98-2e4bc0a98d1b",
+        "filename": "14.b.seg.nrrd",
+        "patient_id": "14",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/14.b.seg.nrrd",
+        "number_of_slices": 255,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "b23f1210-52d1-4ae6-9b01-2ffd7e7fad6f",
+        "filename": "14.img.nrrd",
+        "patient_id": "14",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/14.img.nrrd",
+        "number_of_slices": 255,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "6fd38b02-5823-464d-a4a8-26ea2d21c410",
+        "filename": "15.img.nrrd",
+        "patient_id": "15",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/15.img.nrrd",
+        "number_of_slices": 169,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "b64e478e-5296-45d4-a3a0-15cd39eaff67",
+        "filename": "15.b.seg.nrrd",
+        "patient_id": "15",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/15.b.seg.nrrd",
+        "number_of_slices": 169,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "caf94bb4-c1f7-4e72-a336-8ae30ff08daf",
+        "filename": "16.b.seg.nrrd",
+        "patient_id": "16",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/16.b.seg.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "aef64174-3847-4528-a7ef-4b86fa965141",
+        "filename": "16.img.nrrd",
+        "patient_id": "16",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/16.img.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "14b9e9b5-313c-4f5c-a5bc-30d28b8b16f8",
+        "filename": "17.b.seg.nrrd",
+        "patient_id": "17",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/17.b.seg.nrrd",
+        "number_of_slices": 293,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "679d1bb0-7b39-4c31-a77e-9be8c2dc267a",
+        "filename": "17.img.nrrd",
+        "patient_id": "17",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/17.img.nrrd",
+        "number_of_slices": 293,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "fc705d68-e2a1-4167-9c23-5ee95cea0351",
+        "filename": "18.img.nrrd",
+        "patient_id": "18",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/18.img.nrrd",
+        "number_of_slices": 211,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "9518e540-5c87-470f-bcb3-ab97474ea5e1",
+        "filename": "18.b.seg.nrrd",
+        "patient_id": "18",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/18.b.seg.nrrd",
+        "number_of_slices": 211,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "2f2c7d0c-e65d-4523-bbe2-b5099102c826",
+        "filename": "21.img.nrrd",
+        "patient_id": "21",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/21.img.nrrd",
+        "number_of_slices": 232,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "f1c6c9a2-ddde-4554-96e3-efe75866e7a0",
+        "filename": "21.b.seg.nrrd",
+        "patient_id": "21",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/21.b.seg.nrrd",
+        "number_of_slices": 232,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "9e6c62c5-e72d-4085-9aea-7ad57dcaaa00",
+        "filename": "22.b.seg.nrrd",
+        "patient_id": "22",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/22.b.seg.nrrd",
+        "number_of_slices": 176,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "1bc7c2d7-c779-4a48-aff2-69f48c840a1d",
+        "filename": "22.img.nrrd",
+        "patient_id": "22",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/22.img.nrrd",
+        "number_of_slices": 176,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "18bb727a-8d37-43da-b11d-608f347557ef",
+        "filename": "23.img.nrrd",
+        "patient_id": "23",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/23.img.nrrd",
+        "number_of_slices": 215,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "c7db4ac8-07bc-4bd3-8c68-69bd16b08b71",
+        "filename": "23.b.seg.nrrd",
+        "patient_id": "23",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/23.b.seg.nrrd",
+        "number_of_slices": 215,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "a14f3610-92b0-4980-9aba-8368503a4010",
+        "filename": "24.img.nrrd",
+        "patient_id": "24",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/24.img.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "a29a5e9f-e42f-4f58-be9b-15881d72d0ef",
+        "filename": "24.b.seg.nrrd",
+        "patient_id": "24",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/24.b.seg.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "99ce5940-07ed-409f-b24c-88cb96ee1d2a",
+        "filename": "25.b.seg.nrrd",
+        "patient_id": "25",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/25.b.seg.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "70415659-d344-4291-9080-b456cfdaa9da",
+        "filename": "25.img.nrrd",
+        "patient_id": "25",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/25.img.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "52663699-193a-42a3-841b-c25e5bfd314b",
+        "filename": "26.img.nrrd",
+        "patient_id": "26",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/26.img.nrrd",
+        "number_of_slices": 240,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "ac682e8f-89d4-4d7a-b228-9cde437c680c",
+        "filename": "26.b.seg.nrrd",
+        "patient_id": "26",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/26.b.seg.nrrd",
+        "number_of_slices": 240,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "15e3289a-3eb6-4dd8-b4d1-28e5cd945c98",
+        "filename": "27.b.seg.nrrd",
+        "patient_id": "27",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/27.b.seg.nrrd",
+        "number_of_slices": 216,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "c98ca021-3f0b-4ddb-ab77-dd7ab8142c19",
+        "filename": "27.img.nrrd",
+        "patient_id": "27",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/27.img.nrrd",
+        "number_of_slices": 216,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "311aeae7-355e-4874-8940-e4051110c795",
+        "filename": "29.b.seg.nrrd",
+        "patient_id": "29",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/29.b.seg.nrrd",
+        "number_of_slices": 226,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "89023d32-77b1-4859-8a6e-a3512944732e",
+        "filename": "29.img.nrrd",
+        "patient_id": "29",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/29.img.nrrd",
+        "number_of_slices": 226,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "d7b5d086-0f20-4976-9c0c-e9073eff8336",
+        "filename": "31.b.seg.nrrd",
+        "patient_id": "31",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/31.b.seg.nrrd",
+        "number_of_slices": 180,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "be85a9fe-4325-44d7-8752-a833ea63f1cb",
+        "filename": "31.img.nrrd",
+        "patient_id": "31",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/31.img.nrrd",
+        "number_of_slices": 180,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "eed997aa-8af1-4a78-b1a3-fddbf6a16d2e",
+        "filename": "32.b.seg.nrrd",
+        "patient_id": "32",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/32.b.seg.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "9f879fd1-5f2d-4394-8e59-051fc9a697a8",
+        "filename": "32.img.nrrd",
+        "patient_id": "32",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/32.img.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "449f0e09-1019-4328-ae75-4dbd8c0be66c",
+        "filename": "33.b.seg.nrrd",
+        "patient_id": "33",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/33.b.seg.nrrd",
+        "number_of_slices": 258,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "cc13c3c5-c93a-425c-901a-f0e30b96f482",
+        "filename": "33.img.nrrd",
+        "patient_id": "33",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/33.img.nrrd",
+        "number_of_slices": 258,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "1b664fe3-3e40-4805-8918-25e7a32fa7f4",
+        "filename": "35.img.nrrd",
+        "patient_id": "35",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/35.img.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "627f4bd4-93d1-4aa2-8bb7-b63ec3e9a187",
+        "filename": "35.b.seg.nrrd",
+        "patient_id": "35",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/35.b.seg.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "33b32522-95ab-4021-9b14-2fd3b0c93442",
+        "filename": "36.b.seg.nrrd",
+        "patient_id": "36",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/36.b.seg.nrrd",
+        "number_of_slices": 221,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "ced345d6-2d9f-4b60-a496-416639056c6c",
+        "filename": "36.img.nrrd",
+        "patient_id": "36",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/36.img.nrrd",
+        "number_of_slices": 221,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "253fa196-fe66-4553-a386-b10c9b91b278",
+        "filename": "39.b.seg.nrrd",
+        "patient_id": "39",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/39.b.seg.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "1244fccd-bfa9-4523-99be-0b05cbe7ba04",
+        "filename": "39.img.nrrd",
+        "patient_id": "39",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/39.img.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d806f9e9-17b8-4186-ae0b-23db10ecf167",
+        "filename": "40.b.seg.nrrd",
+        "patient_id": "40",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/40.b.seg.nrrd",
+        "number_of_slices": 221,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "4cdc2b1a-8581-4b00-8a73-6c2572109c9d",
+        "filename": "40.img.nrrd",
+        "patient_id": "40",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/40.img.nrrd",
+        "number_of_slices": 221,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "b0ddb317-e1ed-4d5b-898e-a0d686ece7f7",
+        "filename": "41.b.seg.nrrd",
+        "patient_id": "41",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/41.b.seg.nrrd",
+        "number_of_slices": 185,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "6facbf10-3a03-4097-b896-fc7c239cc165",
+        "filename": "41.img.nrrd",
+        "patient_id": "41",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/41.img.nrrd",
+        "number_of_slices": 185,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "0ca3f943-c547-4048-9016-ec2b577a48f0",
+        "filename": "42.b.img.nrrd",
+        "patient_id": "42",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/42.b.img.nrrd",
+        "number_of_slices": 352,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "4b5da24b-0013-4fe1-b24c-3a72210c44d9",
+        "filename": "42.b.seg.nrrd",
+        "patient_id": "42",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/42.b.seg.nrrd",
+        "number_of_slices": 352,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "b44beeb6-ec24-4804-8580-e70cc7d65001",
+        "filename": "45.img.nrrd",
+        "patient_id": "45",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/45.img.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "8b17227b-e690-4316-a303-9f43132a0a2a",
+        "filename": "45.b.seg.nrrd",
+        "patient_id": "45",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/45.b.seg.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "4d072c22-8d26-49e1-b58e-fa055bc04e51",
+        "filename": "46.img.nrrd",
+        "patient_id": "46",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/46.img.nrrd",
+        "number_of_slices": 235,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "e6f2cd2d-788e-43c3-ad2a-4f3a6dbd08cd",
+        "filename": "46.b.seg.nrrd",
+        "patient_id": "46",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/46.b.seg.nrrd",
+        "number_of_slices": 235,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "50f701a2-c9e5-4582-9889-6134f2faae63",
+        "filename": "47.b.seg.nrrd",
+        "patient_id": "47",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/47.b.seg.nrrd",
+        "number_of_slices": 193,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "a86562fd-5905-47ff-b9c8-63a601cae2e3",
+        "filename": "47.img.nrrd",
+        "patient_id": "47",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/47.img.nrrd",
+        "number_of_slices": 193,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "6e1d80f6-2b37-422e-85b4-4645115c60cb",
+        "filename": "48.b.seg.nrrd",
+        "patient_id": "48",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/48.b.seg.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "21321e11-9f54-4640-8e29-4f0b6d679368",
+        "filename": "48.img.nrrd",
+        "patient_id": "48",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/48.img.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "ab861431-0cfa-4a44-bf88-f3cdb80a050b",
+        "filename": "49.b.seg.nrrd",
+        "patient_id": "49",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/49.b.seg.nrrd",
+        "number_of_slices": 254,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "f1909d80-f357-4d93-9823-8b3721528257",
+        "filename": "49.img.nrrd",
+        "patient_id": "49",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/49.img.nrrd",
+        "number_of_slices": 254,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "6631fbb8-77e2-4b88-9a4a-05303f7abd7b",
+        "filename": "50.b.seg.nrrd",
+        "patient_id": "50",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/50.b.seg.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "2b38a3ad-5f8b-448e-adcd-73eeb96d8373",
+        "filename": "50.img.nrrd",
+        "patient_id": "50",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/50.img.nrrd",
+        "number_of_slices": 245,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "5944c693-4389-4f2a-a241-ce07dbb406fb",
+        "filename": "51.b.seg.nrrd",
+        "patient_id": "51",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/51.b.seg.nrrd",
+        "number_of_slices": 390,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "04fb1066-b635-4076-928e-6802107ea9c8",
+        "filename": "51.img.nrrd",
+        "patient_id": "51",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/51.img.nrrd",
+        "number_of_slices": 390,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "5428c893-f559-435d-a2cb-caafb090b0c1",
+        "filename": "52.img.nrrd",
+        "patient_id": "52",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/52.img.nrrd",
+        "number_of_slices": 230,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "02b9a0a8-bb65-46fc-a137-7a4c4bcaccb2",
+        "filename": "52.b.seg.nrrd",
+        "patient_id": "52",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/52.b.seg.nrrd",
+        "number_of_slices": 230,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "a7348ca8-2eda-4177-811b-4668c1c5d595",
+        "filename": "53.b.seg.nrrd",
+        "patient_id": "53",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/53.b.seg.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "6d2d1fa5-fc7c-4880-99bc-d8c2970282a3",
+        "filename": "53.img.nrrd",
+        "patient_id": "53",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/53.img.nrrd",
+        "number_of_slices": 239,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "df01f71e-4cd3-4121-bb37-6d7952ec5e73",
+        "filename": "55.b.img.nrrd",
+        "patient_id": "55",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/55.b.img.nrrd",
+        "number_of_slices": 475,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "45d08fe9-e92a-4b1b-9613-17105a38d80a",
+        "filename": "55.b.seg.nrrd",
+        "patient_id": "55",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/55.b.seg.nrrd",
+        "number_of_slices": 475,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "10ebe338-feba-4f7c-b885-dfeee5f2b557",
+        "filename": "57.img.nrrd",
+        "patient_id": "57",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/57.img.nrrd",
+        "number_of_slices": 236,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "e65f915c-583d-4ee2-b0b2-3dedee36f135",
+        "filename": "57.b.seg.nrrd",
+        "patient_id": "57",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/57.b.seg.nrrd",
+        "number_of_slices": 236,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "51c26ac1-18f8-4f92-8b8a-8d013a2dd0f2",
+        "filename": "60.b.img.nrrd",
+        "patient_id": "60",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/60.b.img.nrrd",
+        "number_of_slices": 228,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "0711b302-585d-446e-b278-12ee68502f2e",
+        "filename": "60.b.seg.nrrd",
+        "patient_id": "60",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/60.b.seg.nrrd",
+        "number_of_slices": 228,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "94ccde26-c62f-42e9-8b8f-7cae1c98404f",
+        "filename": "61.img.nrrd",
+        "patient_id": "61",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/61.img.nrrd",
+        "number_of_slices": 187,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "05afac58-4ea9-475a-82af-79c25b5b9737",
+        "filename": "61.b.seg.nrrd",
+        "patient_id": "61",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/61.b.seg.nrrd",
+        "number_of_slices": 187,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "e946d4f0-dabd-4d0e-8c80-1cd92e48f973",
+        "filename": "62.b.seg.nrrd",
+        "patient_id": "62",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/62.b.seg.nrrd",
+        "number_of_slices": 268,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "ebd28b36-ea9b-4dca-8555-f27520b8435f",
+        "filename": "62.img.nrrd",
+        "patient_id": "62",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/62.img.nrrd",
+        "number_of_slices": 268,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "a460dea0-c7c5-4648-9ffc-a1705484ce2f",
+        "filename": "63.b.seg.nrrd",
+        "patient_id": "63",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/63.b.seg.nrrd",
+        "number_of_slices": 179,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "3b4eda54-89b5-4b1f-b81f-636cbb65a983",
+        "filename": "63.img.nrrd",
+        "patient_id": "63",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/63.img.nrrd",
+        "number_of_slices": 179,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "3d3d16be-13bb-4bcb-a9cf-ce9d9ff60489",
+        "filename": "64.img.nrrd",
+        "patient_id": "64",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/64.img.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "824b88f0-703b-4899-ae8c-aaffd0b4ddf5",
+        "filename": "64.b.seg.nrrd",
+        "patient_id": "64",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/64.b.seg.nrrd",
+        "number_of_slices": 237,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "6fe79b64-0250-429b-9b8a-431d200258bc",
+        "filename": "65.b.seg.nrrd",
+        "patient_id": "65",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/65.b.seg.nrrd",
+        "number_of_slices": 500,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "9ef5fa3a-ef29-4486-97f3-072bf4167be3",
+        "filename": "65.b.img.nrrd",
+        "patient_id": "65",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/65.b.img.nrrd",
+        "number_of_slices": 500,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "b47b2499-9d8f-4d21-8af2-21e87304b57e",
+        "filename": "66.img.nrrd",
+        "patient_id": "66",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/66.img.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "45d8c676-e486-4127-9485-86c46dd9b1cf",
+        "filename": "66.b.seg.nrrd",
+        "patient_id": "66",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/66.b.seg.nrrd",
+        "number_of_slices": 241,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "d99595c5-2a01-416c-96da-110be4ed7c0b",
+        "filename": "69.img.nrrd",
+        "patient_id": "69",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/69.img.nrrd",
+        "number_of_slices": 232,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "34990e2e-2d1a-4411-9290-9db61d55a150",
+        "filename": "69.b.seg.nrrd",
+        "patient_id": "69",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/69.b.seg.nrrd",
+        "number_of_slices": 232,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "074418f2-7b06-43eb-8cad-5c35cef87254",
+        "filename": "71.b.seg.nrrd",
+        "patient_id": "71",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/71.b.seg.nrrd",
+        "number_of_slices": 209,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d106f9a6-cb3a-47be-86e7-6d54066282c0",
+        "filename": "71.img.nrrd",
+        "patient_id": "71",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/71.img.nrrd",
+        "number_of_slices": 209,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "e85dbcb8-f3c6-431e-972d-5099b8b22687",
+        "filename": "72.img.nrrd",
+        "patient_id": "72",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/72.img.nrrd",
+        "number_of_slices": 231,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "507e000f-6df9-4bf3-8ea6-0b8d0a8c7712",
+        "filename": "72.b.seg.nrrd",
+        "patient_id": "72",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/72.b.seg.nrrd",
+        "number_of_slices": 231,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "a14bd2ba-b598-4ac4-beb3-e1292f331cec",
+        "filename": "73.b.seg.nrrd",
+        "patient_id": "73",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/73.b.seg.nrrd",
+        "number_of_slices": 255,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "8dd96d13-fb60-451b-88fd-7241b42b5d44",
+        "filename": "73.img.nrrd",
+        "patient_id": "73",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/73.img.nrrd",
+        "number_of_slices": 255,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "dafc73d2-f3b5-49aa-a03b-149f702a7be7",
+        "filename": "75.img.nrrd",
+        "patient_id": "75",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/75.img.nrrd",
+        "number_of_slices": 240,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "e87f96f2-940d-4f2a-afd5-babc65a8b015",
+        "filename": "75.b.seg.nrrd",
+        "patient_id": "75",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/75.b.seg.nrrd",
+        "number_of_slices": 240,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "77e52f3c-f705-46c2-bdd8-5ffb62760f0d",
+        "filename": "77.b.seg.nrrd",
+        "patient_id": "77",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/77.b.seg.nrrd",
+        "number_of_slices": 194,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "4eb4723d-24b5-4be7-a6f1-b2adccb48747",
+        "filename": "77.img.nrrd",
+        "patient_id": "77",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/77.img.nrrd",
+        "number_of_slices": 194,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "1631c776-fff6-424a-8f8a-1342474c4504",
+        "filename": "79.b.seg.nrrd",
+        "patient_id": "79",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/79.b.seg.nrrd",
+        "number_of_slices": 264,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "05c26dfa-cdd5-444a-8d8a-b00b38843cde",
+        "filename": "79.img.nrrd",
+        "patient_id": "79",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/79.img.nrrd",
+        "number_of_slices": 264,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "13896a6a-cd34-4126-977f-06cb3bc1b03d",
+        "filename": "82.b.seg.nrrd",
+        "patient_id": "82",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/82.b.seg.nrrd",
+        "number_of_slices": 236,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "ee4e318f-52a6-42c0-907e-93681173c6a5",
+        "filename": "82.img.nrrd",
+        "patient_id": "82",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/82.img.nrrd",
+        "number_of_slices": 236,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "eb0cf5f1-a9fe-4fcb-bb11-4a05365d2684",
+        "filename": "83.b.seg.nrrd",
+        "patient_id": "83",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/83.b.seg.nrrd",
+        "number_of_slices": 264,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "1292d2ec-ec53-4922-b19f-db8f32abc56b",
+        "filename": "83.img.nrrd",
+        "patient_id": "83",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/83.img.nrrd",
+        "number_of_slices": 264,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "808aa1b4-3773-4893-8077-17b775f2b4fb",
+        "filename": "84.b.seg.nrrd",
+        "patient_id": "84",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/84.b.seg.nrrd",
+        "number_of_slices": 170,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "fb9903f7-f190-41cb-a8ab-c3925486f3de",
+        "filename": "84.img.nrrd",
+        "patient_id": "84",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/84.img.nrrd",
+        "number_of_slices": 170,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "845929f0-3c3b-4af6-8ca4-c6c18eb1c44b",
+        "filename": "86.img.nrrd",
+        "patient_id": "86",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/86.img.nrrd",
+        "number_of_slices": 235,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "8d8951b1-e7fb-4b6f-855a-d29266f5fbd3",
+        "filename": "86.b.seg.nrrd",
+        "patient_id": "86",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/86.b.seg.nrrd",
+        "number_of_slices": 235,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "a4be4bb2-6d56-443c-a2c6-f25462b873f8",
+        "filename": "87.b.seg.nrrd",
+        "patient_id": "87",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/87.b.seg.nrrd",
+        "number_of_slices": 261,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "ef328c3b-8774-4f41-84ce-64144d61b3c2",
+        "filename": "87.img.nrrd",
+        "patient_id": "87",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/87.img.nrrd",
+        "number_of_slices": 261,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "65cc4f3c-64c9-4a74-9c4a-b08dca653082",
+        "filename": "88.img.nrrd",
+        "patient_id": "88",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/88.img.nrrd",
+        "number_of_slices": 213,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d0f874ee-6324-48ca-83c9-4afe9d73d6a0",
+        "filename": "88.b.seg.nrrd",
+        "patient_id": "88",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/88.b.seg.nrrd",
+        "number_of_slices": 213,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "ff2a3e8d-6412-4032-8410-8a5f3139fae0",
+        "filename": "90.b.seg.nrrd",
+        "patient_id": "90",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/90.b.seg.nrrd",
+        "number_of_slices": 216,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "a1af4fb9-482c-4726-b1dc-b4778032bd94",
+        "filename": "90.img.nrrd",
+        "patient_id": "90",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/90.img.nrrd",
+        "number_of_slices": 216,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "6c4fe189-779a-4f79-9687-fc6bfac0acc1",
+        "filename": "91.img.nrrd",
+        "patient_id": "91",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/91.img.nrrd",
+        "number_of_slices": 176,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "b6b2abd2-44dc-41d3-9ab4-bee3135fcb3a",
+        "filename": "91.b.seg.nrrd",
+        "patient_id": "91",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/91.b.seg.nrrd",
+        "number_of_slices": 176,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "cf8778c4-3cf8-4545-8fb7-364cb31f90f2",
+        "filename": "92.img.nrrd",
+        "patient_id": "92",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/92.img.nrrd",
+        "number_of_slices": 228,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "2f12bf2d-7165-4362-8ef1-9dcfd1d67d17",
+        "filename": "92.b.seg.nrrd",
+        "patient_id": "92",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/92.b.seg.nrrd",
+        "number_of_slices": 228,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "92a3c801-95b9-4ca5-8e49-2d5f78ce52be",
+        "filename": "93.b.seg.nrrd",
+        "patient_id": "93",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/93.b.seg.nrrd",
+        "number_of_slices": 218,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d93273ae-0ae4-49e9-abf0-bd60c62719bf",
+        "filename": "93.img.nrrd",
+        "patient_id": "93",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/93.img.nrrd",
+        "number_of_slices": 218,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "f785b40f-db66-4a01-bb0d-cb308794d107",
+        "filename": "94.img.nrrd",
+        "patient_id": "94",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/94.img.nrrd",
+        "number_of_slices": 200,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "c73f6bd7-a949-4a0f-958f-5800e6462324",
+        "filename": "94.b.seg.nrrd",
+        "patient_id": "94",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/94.b.seg.nrrd",
+        "number_of_slices": 200,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "2d3a4858-d0ef-4f59-9688-8c0213d910ca",
+        "filename": "95.b.img.nrrd",
+        "patient_id": "95",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/95.b.img.nrrd",
+        "number_of_slices": 227,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "563f65b0-726c-4d62-a199-d992e372cf4e",
+        "filename": "95.b.seg.nrrd",
+        "patient_id": "95",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/95.b.seg.nrrd",
+        "number_of_slices": 227,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "d7920d8f-e780-4593-a490-2eef6a3dfee8",
+        "filename": "96.b.seg.nrrd",
+        "patient_id": "96",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/96.b.seg.nrrd",
+        "number_of_slices": 230,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "e45e5e7f-d19d-493d-89e4-4950f510b3fc",
+        "filename": "96.img.nrrd",
+        "patient_id": "96",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/96.img.nrrd",
+        "number_of_slices": 230,
+        "stroke_side": "R"
+    },
+    {
+        "uuid": "58ad89c2-a6e8-4591-9f61-d8159fce6922",
+        "filename": "97.img.nrrd",
+        "patient_id": "97",
+        "file_type": "img",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/97.img.nrrd",
+        "number_of_slices": 217,
+        "stroke_side": "L"
+    },
+    {
+        "uuid": "848b46f6-7824-47bf-91f2-7309f709defd",
+        "filename": "97.b.seg.nrrd",
+        "patient_id": "97",
+        "file_type": "seg",
+        "directory": "/raid/mpsych/CACTAS/DATA/ESUS/97.b.seg.nrrd",
+        "number_of_slices": 217,
+        "stroke_side": "L"
+    }
+]
