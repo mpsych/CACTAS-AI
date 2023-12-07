@@ -1,5 +1,4 @@
 import os
-import mahotas as mh
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -11,6 +10,7 @@ from sklearn.utils import shuffle
 import json
 import random
 import nrrd
+import pickle
 
 
 class Helper:
@@ -101,6 +101,64 @@ class Helper:
         
         return norm_X_train, norm_y_train, norm_X_test, norm_y_test
     
+    def map_and_key(y_train):
+        slice_to_patient_mapping = {}
+
+        current_slice_index = 0
+        remove_list = []
+
+        for patient_id in range(len(y_train)):
+            for slice_index in range(y_train[patient_id].shape[2]):
+                if np.max(y_train[patient_id][:, :, slice_index]) != 0:
+                    slice_to_patient_mapping[current_slice_index] = patient_id
+                    current_slice_index += 1
+        
+        unique_items = set(slice_to_patient_mapping.values())
+
+        unique_items_list = list(unique_items)
+        a = len(unique_items_list)
+        b = round(0.8 * a)
+        
+        target_value = b - 1
+
+        last_key = None
+
+        for key, value in reversed(slice_to_patient_mapping.items()):
+            if value == target_value:
+                last_key = key
+                break
+        
+        return slice_to_patient_mapping, last_key
+    
+    def map_and_key_fulldata(y_train):
+        slice_to_patient_mapping = {}
+
+        current_slice_index = 0
+        remove_list = []
+
+        for patient_id in range(len(y_train)):
+            for slice_index in range(y_train[patient_id].shape[2]):
+                slice_to_patient_mapping[current_slice_index] = patient_id
+                current_slice_index += 1
+
+        unique_items = set(slice_to_patient_mapping.values())
+
+        unique_items_list = list(unique_items)
+        a = len(unique_items_list)
+        b = round(0.8 * a)
+
+        target_value = b - 1
+
+        last_key = None
+        
+
+        for key, value in reversed(slice_to_patient_mapping.items()):
+            if value == target_value:
+                last_key = key
+                break
+                
+        return slice_to_patient_mapping, last_key
+    
     def extract_slices(X_train, y_train, X_test, y_test):
         slices = []
         for i in range(len(X_train)):
@@ -114,22 +172,37 @@ class Helper:
             for z in range(y_train[i].shape[2]):
                 slice_2d = y_train[i][:, :, z]
                 slices1.append(slice_2d)
-        y_train_array = np.array(slices1)
+                
+        new_slices = []
+        for i in range(len(slices1)):
+            # create a new array where all elements other than zero are replaced by True
+            slices = np.where(slices1[i] != 0, True, False)
+            new_slices.append(slices)
+        y_train_array = np.array(new_slices)
         
         slices2 = []
         for i in range(len(X_test)):
             for z in range(X_test[i].shape[2]):
                 slice_2d = X_test[i][:, :, z]
                 slices2.append(slice_2d)
-        X_test_array = np.array(slices2)        
+        X_test_array = np.array(slices2)  
         
         slices3 = []
         for i in range(len(y_test)):
             for z in range(y_test[i].shape[2]):
                 slice_2d = y_test[i][:, :, z]
-                slices3.append(slice_2d)
-        y_test_array = np.array(slices3)        
+                slices3.append(slice_2d)  
         
+        new_slice = []
+        for i in range(len(slices3)):
+            # create a new array where all elements other than zero are replaced by True
+            slices = np.where(slices3[i] != 0, True, False)
+            new_slice.append(slices)
+        y_test_array = np.array(new_slice)
+        
+        #X_test_array = X_test_array.astype(np.float64)
+        #y_test_array = y_test_array.astype(np.float64)
+
         X_train_array = X_train_array.reshape(X_train_array.shape[0], X_train_array.shape[1],X_train_array.shape[2], 1)
         y_train_array = y_train_array.reshape(y_train_array.shape[0], y_train_array.shape[1],y_train_array.shape[2], 1)
         X_test_array = X_test_array.reshape(X_test_array.shape[0], X_test_array.shape[1],X_test_array.shape[2], 1)
@@ -142,16 +215,11 @@ class Helper:
         
         return X_train_array, y_train_array, X_test_array, y_test_array
     
-    def filter_slices(X_train, y_train, X_test, y_test):
+    def filter_slices(X_train, y_train):
         remove_list1 = []
         for i,d in enumerate(y_train):
             if d.max() == 0:
                 remove_list1.append(i)
-                
-        remove_list2=[]
-        for i,d in enumerate(y_test):
-            if d.max() == 0:
-                remove_list2.append(i)
 
         images = []
         for index, element in enumerate(X_train):
@@ -165,21 +233,15 @@ class Helper:
         X_train = np.array(images)
         y_train = np.array(labels)
         
-        images1 = []
-        for index, element in enumerate(X_test):
-            if index not in remove_list2:
-                images1.append(element)
-        labels1 = []
-        for index, element in enumerate(y_test):
-            if index not in remove_list2:
-                labels1.append(element)
-                
-        X_test = np.array(images1)
-        y_test = np.array(labels1)
+        X_train = X_train.astype(np.float64)
+        y_train = y_train.astype(np.float64)
+        #X_test = X_test.astype(np.float64)
+        #y_test = y_test.astype(np.float64)
         
-        print(X_train.shape, y_train.shape, X_test.shape, y_test.shape)
-    
-        return X_train, y_train, X_test, y_test
+        #print(X_train.shape, y_train.shape, X_test.shape, y_test.shape)
+        print(X_train.shape, y_train.shape)
+        
+        return X_train, y_train
     
     
     def augment(X_train, y_train):
@@ -200,6 +262,36 @@ class Helper:
 
         return train_gen
     
+    def augment_1(X_train, y_train):
+        from keras_unet.utils import get_augmented
+
+        train_gen = get_augmented(
+            X_train, y_train, batch_size=2,
+            data_gen_args = dict(
+                rotation_range=45.,  # Increase rotation range
+                width_shift_range=0.1,  # Increase shift range
+                height_shift_range=0.1,  # Increase shift range
+                shear_range=80,  # Increase shear range
+                zoom_range=[0.2, 0.5],  # Increase zoom range
+                horizontal_flip=True,
+                vertical_flip=True,
+                fill_mode='constant'
+            ))    
+        return train_gen
+    
+    def augment_2(X_train, y_train):
+        from keras_unet.utils import get_augmented
+
+        train_gen = get_augmented(
+            X_train, y_train, batch_size=2,
+            data_gen_args = dict(
+                rotation_range=90.,  
+                horizontal_flip=True,
+                vertical_flip=True,
+                fill_mode='constant'
+            ))    
+        return train_gen
+    
     def create_unet(input_shape):
         from keras_unet.models import custom_unet
         model = custom_unet(
@@ -218,24 +310,31 @@ class Helper:
         model.compile(optimizer = Adam(learning_rate=0.001),
               loss='binary_crossentropy', 
               metrics=[iou, iou_thresholded])
-        
+
         return model
 
-    def train_unet(train_gen, X_train, y_train, X_val, y_val, model, epochs=200):
+    def train_unet(X_train, y_train, X_val, y_val, model, epochs=200):
         batch_size = 32
-        history = model.fit(X_train,
+        history = model.fit(#train_gen,
+                            X_train,
                             y_train,
                             batch_size = batch_size,
-                            epochs=200,
+                            #steps_per_epoch = len(X_train) // 2,
+                            epochs=epochs,
                             validation_data=(X_val, y_val))
+        
+        #weights = model.save_weights('unet_weights_v1.h5')
+        
+        #with open('training_history_5.pkl', 'wb') as file:
+        #    pickle.dump(history.history, file)
+        
         return model, history
     
     def visualize_graph(history):
         from keras_unet.utils import plot_segm_history
         
         vis = plot_segm_history(history)
-        
-        #return vis
+
     
     def prediction(X_val, model):
         y_pred = model.predict(X_val)
@@ -245,7 +344,7 @@ class Helper:
     def visualize_result(X_val, y_val, y_pred):
         from keras_unet.utils import plot_imgs
 
-        plot_imgs(org_imgs=X_val, mask_imgs=y_val, pred_imgs=y_pred, nm_img_to_plot=10)
+        plot_imgs(org_imgs=X_val, mask_imgs=y_val, pred_imgs=y_pred, nm_img_to_plot=20)
     
     def evaluate(X_val, y_val, model):
         loss, iou, iou_thresholded = model.evaluate(X_val, y_val)
