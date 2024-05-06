@@ -11,6 +11,9 @@ import json
 import random
 import nrrd
 import pickle
+import mahotas as mh
+from skimage.filters import threshold_otsu
+
 
 
 class Helper:
@@ -33,6 +36,16 @@ class Helper:
                     labels.append(file)
 
         return images, labels
+    
+    def load_seg_data(DATAPATH='/raid/mpsych/CACTAS/DATA/CA'):
+        seg=[]
+        directory = DATAPATH
+        for filename in os.listdir(directory):
+            file_path = os.path.join(directory, filename)
+            if os.path.isfile(file_path):
+                file = file_path.split("/")[6] 
+                seg.append(file)
+        return seg
 
     def split_patients(images, labels):
         numbers = []
@@ -73,6 +86,42 @@ class Helper:
 
         return X_train, y_train, X_test, y_test
     
+    
+    def split_patients_masks(images, labels, masks):
+        numbers = [filename.split(".")[0] for filename in images]
+        label_dict = {filename.split(".")[0]: filename for filename in labels}
+        mask_dict = {filename.split(".")[0]: filename for filename in masks}
+
+        data = [(filename, label_dict[filename.split(".")[0]], mask_dict[filename.split(".")[0]]) for filename in images]
+
+        random.shuffle(numbers)
+        split_ratio = 0.8
+        split_index = int(len(numbers) * split_ratio)
+        train_numbers = numbers[:split_index]
+        test_numbers = numbers[split_index:]
+
+        X_train = []
+        y_train = []
+        m_train = []
+        X_test = []
+        y_test = []
+        m_test = []
+
+        # Sort the data based on the order of train_numbers and test_numbers
+        data.sort(key=lambda x: (x[0].split(".")[0] in test_numbers, random.random()))
+
+        for image, label, mask in data:
+            if image.split(".")[0] in train_numbers:
+                X_train.append(image)
+                y_train.append(label)
+                m_train.append(mask)
+            elif image.split(".")[0] in test_numbers:
+                X_test.append(image)
+                y_test.append(label)
+                m_test.append(mask)
+
+        return X_train, y_train, m_train, X_test, y_test, m_test
+
 
     def normalization(DATAPATH,X_train, y_train, X_test, y_test):
         norm_X_train = []
@@ -100,6 +149,46 @@ class Helper:
 
         
         return norm_X_train, norm_y_train, norm_X_test, norm_y_test
+    
+    
+    def normalization2(DATAPATH, CAPATH, X_train, y_train, m_train, X_test, y_test, m_test):
+        norm_X_train = []
+        norm_y_train = []
+        norm_X_test = []
+        norm_y_test = []
+        read_m_train = []
+        read_m_test = []
+        
+        for file in X_train:
+            data, header = nrrd.read(DATAPATH + "/" +file)
+            normalized_data = (data - np.min(data)) / (np.max(data) - np.min(data))
+            norm_X_train.append(normalized_data)
+            
+        for file in y_train:
+            data, header = nrrd.read(DATAPATH + "/" + file)
+            norm_y_train.append(data)
+            
+        for file in m_train:
+            data, header = nrrd.read(CAPATH + "/" + file)
+            normalized_data = (data - np.min(data)) / (np.max(data) - np.min(data))
+            read_m_train.append(normalized_data)
+
+        for file in X_test:
+            data, header = nrrd.read(DATAPATH + "/" + file)
+            normalized_data = (data - np.min(data)) / (np.max(data) - np.min(data))
+            norm_X_test.append(normalized_data)
+            
+        for file in y_test:
+            data, header = nrrd.read(DATAPATH + "/" + file)
+            norm_y_test.append(data)
+            
+        for file in m_test:
+            data, header = nrrd.read(CAPATH + "/" + file)
+            normalized_data = (data - np.min(data)) / (np.max(data) - np.min(data))
+            read_m_test.append(normalized_data)
+
+        
+        return norm_X_train, norm_y_train, read_m_train, norm_X_test, norm_y_test, read_m_test
     
     def map_and_key(y_train):
         slice_to_patient_mapping = {}
@@ -202,18 +291,145 @@ class Helper:
         
         #X_test_array = X_test_array.astype(np.float64)
         #y_test_array = y_test_array.astype(np.float64)
+        
+        #y_train_array = y_train_array.astype(np.float64)
+        #y_test_array = y_test_array.astype(np.float64)
+
 
         X_train_array = X_train_array.reshape(X_train_array.shape[0], X_train_array.shape[1],X_train_array.shape[2], 1)
         y_train_array = y_train_array.reshape(y_train_array.shape[0], y_train_array.shape[1],y_train_array.shape[2], 1)
         X_test_array = X_test_array.reshape(X_test_array.shape[0], X_test_array.shape[1],X_test_array.shape[2], 1)
         y_test_array = y_test_array.reshape(y_test_array.shape[0], y_test_array.shape[1],y_test_array.shape[2], 1)
         
-        #y_train_array = y_train.astype(bool)
-        #y_test_array = y_train.astype(bool)
+        #y_train_array = y_train.astype(np.bool)
+        #y_test_array = y_train.astype(np.bool)
 
         print(X_train_array.shape, y_train_array.shape, X_test_array.shape, y_test_array.shape)
         
         return X_train_array, y_train_array, X_test_array, y_test_array
+    
+    
+    def extract_slices2(X_train, y_train, m_train, X_test, y_test, m_test):
+        slices = []
+        for i in range(len(X_train)):
+            for z in range(X_train[i].shape[2]):
+                slice_2d = X_train[i][:, :, z]
+                slices.append(slice_2d)
+        X_train_array = np.array(slices)
+        
+        slices1 = []
+        for i in range(len(y_train)):
+            for z in range(y_train[i].shape[2]):
+                slice_2d = y_train[i][:, :, z]
+                slices1.append(slice_2d)
+                
+        new_slices = []
+        for i in range(len(slices1)):
+            # create a new array where all elements other than zero are replaced by True
+            slices = np.where(slices1[i] != 0, True, False)
+            new_slices.append(slices)
+        y_train_array = np.array(new_slices)
+        
+        slices_mtrain=[]
+        for i in range(len(m_train)):
+            for z in range(m_train[i].shape[2]):
+                slice_2d = m_train[i][:, :, z]
+                slices_mtrain.append(slice_2d)
+        m_train_array = np.array(slices_mtrain)
+        
+        slices2 = []
+        for i in range(len(X_test)):
+            for z in range(X_test[i].shape[2]):
+                slice_2d = X_test[i][:, :, z]
+                slices2.append(slice_2d)
+        X_test_array = np.array(slices2)  
+        
+        slices3 = []
+        for i in range(len(y_test)):
+            for z in range(y_test[i].shape[2]):
+                slice_2d = y_test[i][:, :, z]
+                slices3.append(slice_2d)  
+        
+        new_slice = []
+        for i in range(len(slices3)):
+            # create a new array where all elements other than zero are replaced by True
+            slices = np.where(slices3[i] != 0, True, False)
+            new_slice.append(slices)
+        y_test_array = np.array(new_slice)
+        
+        slices_mtest=[]
+        for i in range(len(m_test)):
+            for z in range(m_test[i].shape[2]):
+                slice_2d = m_test[i][:, :, z]
+                slices_mtest.append(slice_2d)
+        m_test_array = np.array(slices_mtest)
+        
+        #X_test_array = X_test_array.astype(np.float64)
+        #y_test_array = y_test_array.astype(np.float64)
+
+        X_train_array = X_train_array.reshape(X_train_array.shape[0], X_train_array.shape[1],X_train_array.shape[2], 1)
+        y_train_array = y_train_array.reshape(y_train_array.shape[0], y_train_array.shape[1],y_train_array.shape[2], 1)
+        X_test_array = X_test_array.reshape(X_test_array.shape[0], X_test_array.shape[1],X_test_array.shape[2], 1)
+        y_test_array = y_test_array.reshape(y_test_array.shape[0], y_test_array.shape[1],y_test_array.shape[2], 1)
+        
+        m_train_array = m_train_array.reshape(m_train_array.shape[0], m_train_array.shape[1],m_train_array.shape[2], 1)
+        m_test_array = m_test_array.reshape(m_test_array.shape[0], m_test_array.shape[1],m_test_array.shape[2], 1)
+        
+        #y_train_array = y_train.astype(np.float64)
+        #y_test_array = y_train.astype(np.float64)
+
+        print(X_train_array.shape, y_train_array.shape, m_train_array.shape, X_test_array.shape, y_test_array.shape, 
+              m_test_array.shape)
+        
+        return X_train_array, y_train_array, m_train_array, X_test_array, y_test_array, m_test_array
+    
+    
+    
+    
+    def extract_masks_slices(m_train, m_test):
+        slices_mtrain=[]
+        for i in range(len(m_train)):
+            for z in range(m_train[i].shape[2]):
+                slice_2d = m_train[i][:, :, z]
+                dilated = mh.dilate(slice_2d.astype(np.bool_))
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                slices_mtrain.append(dilated)
+        m_train_array = np.array(slices_mtrain)
+        
+        slices_mtest=[]
+        for i in range(len(m_test)):
+            for z in range(m_test[i].shape[2]):
+                slice_2d = m_test[i][:, :, z]
+                dilated = mh.dilate(slice_2d.astype(np.bool_))
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                dilated = mh.dilate(dilated)
+                slices_mtest.append(dilated)
+        m_test_array = np.array(slices_mtest)
+        
+        
+        m_train_array = m_train_array.reshape(m_train_array.shape[0], m_train_array.shape[1],m_train_array.shape[2], 1)
+        m_test_array = m_test_array.reshape(m_test_array.shape[0], m_test_array.shape[1],m_test_array.shape[2], 1)
+        
+        
+        print(m_train_array.shape, m_test_array.shape)
+        
+        return m_train_array, m_test_array
+       
     
     def filter_slices(X_train, y_train):
         remove_list1 = []
@@ -298,7 +514,7 @@ class Helper:
             input_shape=input_shape,
             use_batch_norm=False,
             num_classes=1,
-            filters=64,
+            filters=4,
             dropout=0.2, 
             dropout_change_per_layer=0.0,
             num_layers=4,
@@ -314,12 +530,12 @@ class Helper:
         return model
 
     def train_unet(X_train, y_train, X_val, y_val, model, epochs=200):
-        batch_size = 32
+        batch_size = 4
         history = model.fit(#train_gen,
                             X_train,
                             y_train,
                             batch_size = batch_size,
-                            #steps_per_epoch = len(X_train) // 2,
+                            steps_per_epoch = len(X_train) // batch_size,
                             epochs=epochs,
                             validation_data=(X_val, y_val))
         

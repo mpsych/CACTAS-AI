@@ -1,5 +1,4 @@
 import os
-import mahotas as mh
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
