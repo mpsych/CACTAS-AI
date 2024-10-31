@@ -13,7 +13,9 @@ We introduce a two-step segmentation process. First, segments the carotid artery
 * [Contact](#contact)
 
 ### Carotid Artery Segmentation
-Using the TotalSegmentator output as initial seeds, first, we segment the carotid artery.
+First, using TotalSegmentator, we get the output of the common carotid artery left and right, vertebrae C3 and C5. Then we analyzed carotid artery intensity values and calculated a threshold based on the mean intensity. Then we set threshold ranges of -50 and +200. The images were then cropped around the carotid artery, guided by vertebrae segmentation from TotalSegmentator. Finally, we applied a region-growing technique to produce the carotid artery mask.
+
+You can find the code here - [Carotid Artery Segmentation](https://github.com/jiehyunjkim/CACTAS-AI/tree/main/_EXPERIMENTS/CarotidArterySegmentation)
 
 <img width="908" alt="Screenshot 2024-10-31 at 12 52 34 AM" src="https://github.com/user-attachments/assets/70a1b73a-7232-4f7d-96c1-56f12934a65a">
 
