@@ -7,8 +7,8 @@ We introduce a two-step segmentation process. First, segments the carotid artery
 ## Table of Contents
 * [Automatic Segmentation of Calcified Plaque in Carotid Arteries](#cactas-project)
   * [Dataset](#Dataset)
-  * [Carotid Artery Segmentation](#ca-seg)
-  * [Plaque Segmentation](#plaque-seg)
+  * [Carotid Artery Segmentation](#Carotid-Artery-Segmentation)
+  * [Plaque Segmentation](#Plaque-Segmentation)
 * [License](#license)
 * [Contact](#contact)
 
