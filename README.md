@@ -18,7 +18,7 @@ Using the TotalSegmentator output as initial seeds, first, we segment the caroti
 <img width="908" alt="Screenshot 2024-10-31 at 12 52 34 AM" src="https://github.com/user-attachments/assets/70a1b73a-7232-4f7d-96c1-56f12934a65a">
 
 ### Plaque Segmentation
-We segment plaque using 2D and 3D UNet.
+We segment plaque using 2D and 3D UNet. You can find the code here - [2D UNet](https://github.com/jiehyunjkim/CACTAS-AI/tree/main/_EXPERIMENTS/2D%20UNet), [3D UNet](https://github.com/jiehyunjkim/CACTAS-AI/tree/main/_EXPERIMENTS/3D%20UNet)
 
 2D UNet:<br/>
 <img width="920" alt="Screenshot 2024-10-31 at 12 52 44 AM" src="https://github.com/user-attachments/assets/0ee408ef-b3f0-4275-b6ad-12732351594d"><br/>
